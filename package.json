@@ -1,0 +1,13 @@
+{
+  "name": "web-hima-d3-si",
+  "version": "1.0.0",
+  "description": "untuk d3veloper, buat web HIMA D3 SI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx tailwindcss -i ./src/input.css -o ./public/css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
