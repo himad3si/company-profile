@@ -846,6 +846,10 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .bg-orange {
   --tw-bg-opacity: 1;
   background-color: rgb(255 123 1 / var(--tw-bg-opacity, 1));
