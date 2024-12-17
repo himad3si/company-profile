@@ -12,6 +12,14 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    function ({ addBase }) {
+      addBase({
+        'html': {
+          'scroll-behavior': 'smooth',
+        },
+      });
+    },
+  ],
 }
 
