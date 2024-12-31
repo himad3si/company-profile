@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./asset/logo/logoHIMA.png" type="img">
+
+    <title>Home</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 bg-white py-10 transition-shadow duration-300">
+        <div class="flex justify-between items-center mx-10">
+            <!-- Logo dan tulisan Himpunan -->
+            <div class="flex gap-4 items-center">
+                <a href="splashScreen.html">
+                    <img src="./asset/logo/logoHIMA.png" alt="Logo HIMA" class="w-20">
+                </a>
+                <a>
+                    <img src="./asset/logo/logoKabinet.png" alt="Logo HIMA" class="w-20">
+                </a>
+                <div>
+                    <p class="text-sm md:text-lg lg:text-xl font-bold text-orange">
+                        Himpunan Mahasiswa D3 Sistem Informasi <br>Universitas Pembangunan Nasional "Veteran" Jakarta
+                    </p>
+                </div>
+            </div>
+            <!-- Navigasi pada ukuran lg -->
+            <div class="text-sm md:text-lg lg:text-xl text-right text-orange hidden lg:block">
+                <a href="index.html" class="px-3 font-medium hover:font-bold">Home</a>
+                <a href="about.html" class="px-3 font-medium hover:font-bold">About Us</a>
+                <a href="about.html#struktur" class="px-3 font-medium hover:font-bold">Struktur Department</a>
+            </div>
+            <!-- Hamburger Menu -->
+            <div class="flex lg:hidden">
+                <button type="button" class="relative inline-flex items-center justify-center rounded-md text-orange p-2 hover:bg-yellow hover:bg-opacity-40 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2" aria-controls="mobile-menu" aria-expanded="false">
+                    <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                    <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Sembunyikan hamburger menu pada ukuran lg -->
+        <div class="lg:hidden" id="mobile-menu">
+            <div class="space-y-1 pb-2 pt-4 mx-10">
+                <a href="index.html" class="block rounded-md py-2 text-sm md:text-lg md:lg text-orange font-medium hover:font-bold">Home</a>
+                <a href="about.html" class="block rounded-md py-2 text-sm md:text-lg md:lg text-orange font-medium hover:font-bold">About Us</a>
+                <a href="about.html#struktur" class="block rounded-md py-2 text-sm md:text-lg md:lg text-orange font-medium hover:font-bold">Struktur Department</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Kepala -->
+    <div class="pt-64 pb-24 relative">
+        <div class="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 z-[-1]" style="background-image: url('./asset/hima.png');"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-orange to-yellow opacity-30 z-[-1]"></div>
+        <div class="absolute inset-0 bg-white opacity-30 z-[-1]"></div>
+        <div class="mx-10 md:mx-20 relative z-10">
+            <div>
+                <div class="flex items-center space-x-4 mb-8">
+                    <div class="w-60 h-1 bg-orange rounded-full"></div>
+                    <h2 class="text-xl md:text-2xl lg:text-3xl font-semibold">Mahasiswa D3 Sistem Informasi UPNVJ</h2>
+                </div>
+                <h1 class="text-4xl lg:text-6xl font-bold text-orange mb-8">Kabinet Sinergi Progresif</h1>
+                <p class="text-lg md:text-2xl lg:text-2xl lg:w-2/3 mb-14">Selamat datang di website Himpunan Mahasiswa D3 Sistem Informasi Universitas Pembangunan Nasional "Veteran" Jakarta</p>
+                <button>
+                    <a href="#departemen" class=" text-white bg-orange px-6 py-3 rounded-lg hover:bg-darkorange flex justify-center items-center space-x-2 shadow-[0px_3px_0px_rgba(0,0,0,0.2)] font-semibold transform transition-all duration-200 hover:shadow-[0px_2px_0px_rgba(0,0,0,0.3)] hover:-translate-y-1 active:shadow-none active:translate-y-1">Yuk, kenal lebih dekat!</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Company Profile -->
+    <div class="mt-16">
+        <div class="mx-20">
+            <div class="text-center">
+                <h1 class="text-xl md:text-3xl font-semibold mb-3">Video Company Profile Hima D3SI <br>Kabinet Sinergi Progresif</h1>
+                <div class="w-44 rounded-full h-1 bg-orange mx-auto mt-6"></div>
+            </div>
+        </div>
+        <!-- Link youtube video company profile -->
+        <div class="flex items-center justify-center mt-10 mx-10">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/P04dSf-VDqQ?si=2oyHxxVcGrGS2yEO" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="rounded-lg shadow-lg">
+            </iframe>
+        </div>
+    </div>
+
+    <!-- Departemen yang ada di Himpunan Mahasiswa D3 Sistem Informasi -->
+    <div id="departemen" class="py-10 mt-16 bg-orange">
+        <div class="text-center">
+            <h1 class="text-xl lg:text-3xl font-semibold mb-3 text-white">Departemen HIMA D3SI 2024 <br>Kabinet Sinergi Progresif</h1>
+            <div class="w-44 rounded-full h-1 bg-white mx-auto mt-6"></div>
+        </div>
+    </div>
+
+    <!-- Departemen kami -->
+    <div class="flex flex-col my-16 mx-10 sm:mx-8 lg:mx-28 items-center justify-center">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+            <!-- Kartu 1 -->
+            <a href="about.html#eselon">
+                <div class="flex flex-col items-center">
+                    <div class="bg-yellow w-full hover:bg-darkyellow max-w-[387px] h-[274px] rounded-lg shadow-[0px_3px_0px_rgba(0,0,0,0.2)] flex items-center justify-center transform transition-all duration-200 hover:shadow-[0px_2px_0px_rgba(0,0,0,0.3)] hover:-translate-y-1 active:shadow-none active:translate-y-1">
+                        <img src="./asset/iconCard/leader.png" alt="Eselon" class="w-32 h-32 sm:w-40 sm:h-40">
+                    </div>
+                    <p class="font-semibold text-center mt-4 sm:mt-6 text-xl lg:text-3xl">Eselon</p>
+                </div>
+            </a>
+            <!-- Kartu 2 -->
+            <a href="about.html#medkom">
+                <div class="flex flex-col items-center">
+                    <div class="bg-yellow w-full hover:bg-darkyellow max-w-[387px] h-[274px] rounded-lg shadow-[0px_3px_0px_rgba(0,0,0,0.2)] flex items-center justify-center transform transition-all duration-200 hover:shadow-[0px_2px_0px_rgba(0,0,0,0.3)] hover:-translate-y-1 active:shadow-none active:translate-y-1">
+                        <img src="./asset/iconCard/discuss.png" alt="Medkom" class="w-32 h-32 sm:w-40 sm:h-40">
+                    </div>
+                    <p class="font-semibold text-center mt-4 sm:mt-6 text-xl lg:text-3xl">
+                        Departemen Media & Komunikasi
+                    </p>
+                </div>
+            </a>
+            <!-- Kartu 3 -->
+            <a href="about.html#akademik">
+                <div class="flex flex-col items-center">
+                    <div class="bg-yellow w-full hover:bg-darkyellow max-w-[387px] h-[274px] rounded-lg shadow-[0px_3px_0px_rgba(0,0,0,0.2)] flex items-center justify-center transform transition-all duration-200 hover:shadow-[0px_2px_0px_rgba(0,0,0,0.3)] hover:-translate-y-1 active:shadow-none active:translate-y-1">
+                        <img src="./asset/iconCard/stackofbooks.png" alt="Akademik" class="w-32 h-32 sm:w-40 sm:h-40">
+                    </div>
+                    <p class="font-semibold text-center mt-4 sm:mt-6 text-xl lg:text-3xl">Departemen Akademik</p>
+                </div>
+            </a>
+            <!-- Kartu 4 -->
+            <a href="about.html#psdm">
+                <div class="flex flex-col items-center">
+                    <div class="bg-yellow w-full hover:bg-darkyellow max-w-[387px] h-[274px] rounded-lg shadow-[0px_3px_0px_rgba(0,0,0,0.2)] flex items-center justify-center transform transition-all duration-200 hover:shadow-[0px_2px_0px_rgba(0,0,0,0.3)] hover:-translate-y-1 active:shadow-none active:translate-y-1">
+                        <img src="./asset/iconCard/recruitment.png" alt="PSDM" class="w-32 h-32 sm:w-40 sm:h-40">
+                    </div>
+                    <p class="font-semibold text-center mt-4 sm:mt-6 text-xl lg:text-3xl">
+                        Departemen Pengembangan & Sumber Daya Manusia
+                    </p>
+                </div>
+            </a>
+            <!-- Kartu 5 -->
+            <a href="about.html#sospol">
+                <div class="flex flex-col items-center">
+                    <div class="bg-yellow w-full hover:bg-darkyellow max-w-[387px] h-[274px] rounded-lg shadow-[0px_3px_0px_rgba(0,0,0,0.2)] flex items-center justify-center transform transition-all duration-200 hover:shadow-[0px_2px_0px_rgba(0,0,0,0.3)] hover:-translate-y-1 active:shadow-none active:translate-y-1">
+                        <img src="./asset/iconCard/aspirating.png" alt="Sospol" class="w-32 h-32 sm:w-40 sm:h-40">
+                    </div>
+                    <p class="font-semibold text-center mt-4 sm:mt-6 text-xl lg:text-3xl">
+                        Departemen Sosial & Politik
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <!-- Kaki -->
+    <footer class="bg-orange max-w-full py-10">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center px-8 lg:px-16">
+            <!-- Maps -->
+            <div class="flex justify-center">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.603939132758!2d106.7934612!3d-6.315644100000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ee3e065d4f6b%3A0xe176f81a31564166!2sUniversitas%20Pembangunan%20Nasional%20%22Veteran%22%20Jakarta!5e0!3m2!1sid!2sid!4v1735651200700!5m2!1sid!2sid" class="w-full h-[300px] lg:h-[450px]" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+    
+            <!-- Lokasi dan email -->
+            <div class="text-center lg:text-left text-white">
+                <h2 class="text-4xl font-bold mb-4">Location</h2>
+                <p class="text-lg md:text-2xl lg:text-xl  leading-relaxed">
+                    Jalan RS. Fatmawati Raya, Pd. Labu, Kec. Cilandak, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta
+                </p>
+                <h2 class="text-4xl font-bold mt-8 lg:mt-4 mb-4">Email</h2>
+                <a href="mailto:himpunand3si@gmail.com" class="text-lg md:text-2xl lg:text-xl hover:underline">
+                    himpunand3si@gmail.com
+                </a>
+            </div>
+    
+            <!-- Sosial Media -->
+            <div class="flex flex-col items-center">
+                <h2 class="text-4xl font-bold text-white mb-6 text-center">Follow Us</h2>
+                <div class="space-y-4">
+                    <div class="flex space-x-8 justify-center">
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/himad3si_upnvj/" target="_blank" class="flex items-center justify-center h-16 w-16 bg-yellow text-orange rounded-full drop-shadow-md space-x-2 shadow-[0px_4px_0px_rgba(0,0,0,0.2)] py-2 px-4 text-base font-semibold transform transition-all duration-200 hover:shadow-[0px_2px_0px_rgba(0,0,0,0.3)] hover:-translate-y-1 active:shadow-none active:translate-y-1">
+                            <i class="fa-brands fa-instagram text-3xl"></i>
+                        </a>
+                        <!-- TikTok -->
+                        <a href="https://www.tiktok.com/@himad3si_upnvj" target="_blank" class="flex items-center justify-center h-16 w-16 bg-yellow text-orange rounded-full drop-shadow-md space-x-2 shadow-[0px_4px_0px_rgba(0,0,0,0.2)] py-2 px-4 text-base font-semibold transform transition-all duration-200 hover:shadow-[0px_2px_0px_rgba(0,0,0,0.3)] hover:-translate-y-1 active:shadow-none active:translate-y-1"> 
+                            <i class="fa-brands fa-tiktok text-2xl"></i>
+                        </a>
+                        <!-- YouTube -->
+                        <a href="https://www.youtube.com/@HIMAD3SIUPNVJ" target="_blank" class="flex items-center justify-center h-16 w-16 bg-yellow text-orange rounded-full drop-shadow-md space-x-2 shadow-[0px_4px_0px_rgba(0,0,0,0.2)] py-2 px-4 text-base font-semibold transform transition-all duration-200 hover:shadow-[0px_2px_0px_rgba(0,0,0,0.3)] hover:-translate-y-1 active:shadow-none active:translate-y-1">
+                            <i class="fa-brands fa-youtube text-2xl"></i>
+                        </a>
+                    </div>
+                    <div class="flex space-x-8 justify-center">
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/himpunan-mahasiswa-d3-sistem-informasi-upnvj-99889a319/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank" class="flex items-center justify-center h-16 w-16 bg-yellow text-orange rounded-full drop-shadow-md space-x-2 shadow-[0px_4px_0px_rgba(0,0,0,0.2)] py-2 px-4 text-base font-semibold transform transition-all duration-200 hover:shadow-[0px_2px_0px_rgba(0,0,0,0.3)] hover:-translate-y-1 active:shadow-none active:translate-y-1">
+                            <i class="fa-brands fa-linkedin text-2xl"></i>
+                        </a>
+                        <!-- X -->
+                        <a href="https://x.com/himad3si_upnvj?t=CTpIADQTUITbOleFq-jPGQ&s=08" target="_blank" class="flex items-center justify-center h-16 w-16 bg-yellow text-orange rounded-full drop-shadow-md space-x-2 shadow-[0px_4px_0px_rgba(0,0,0,0.2)] py-2 px-4 text-base font-semibold transform transition-all duration-200 hover:shadow-[0px_2px_0px_rgba(0,0,0,0.3)] hover:-translate-y-1 active:shadow-none active:translate-y-1">
+                            <i class="fa-brands fa-x-twitter text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- Penghubung ke javascript eksternal -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
